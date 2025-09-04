@@ -1,0 +1,55 @@
+export const cars = [
+  {
+    id: 'civic-2022',
+    brand: 'Honda',
+    model: 'Civic',
+    type: 'Sedan',
+    seats: 5,
+    transmission: 'Automatic',
+    pricePerDay: 48,
+    image: 'https://images.unsplash.com/photo-1549921296-3c9bfb0b3f2b?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
+    id: 'corolla-2021',
+    brand: 'Toyota',
+    model: 'Corolla',
+    type: 'Sedan',
+    seats: 5,
+    transmission: 'Automatic',
+    pricePerDay: 45,
+    image: 'https://images.unsplash.com/photo-1605559424843-9e4ab42937f2?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
+    id: 'model3-2023',
+    brand: 'Tesla',
+    model: 'Model 3',
+    type: 'Electric',
+    seats: 5,
+    transmission: 'Automatic',
+    pricePerDay: 95,
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
+    id: 'rav4-2022',
+    brand: 'Toyota',
+    model: 'RAV4',
+    type: 'SUV',
+    seats: 5,
+    transmission: 'Automatic',
+    pricePerDay: 70,
+    image: 'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1200&auto=format&fit=crop',
+  },
+  {
+    id: 'mustang-2020',
+    brand: 'Ford',
+    model: 'Mustang',
+    type: 'Coupe',
+    seats: 4,
+    transmission: 'Manual',
+    pricePerDay: 110,
+    image: 'https://images.unsplash.com/photo-1511300636408-a63a89df3482?q=80&w=1200&auto=format&fit=crop',
+  },
+]
+
+export const brands = Array.from(new Set(cars.map(c => c.brand)))
+export const types = Array.from(new Set(cars.map(c => c.type)))
